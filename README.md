@@ -1,7 +1,7 @@
 # Cheap-Feaver-Screener-PID-Control-PCB
 PCB to control two heating elements wit i2c temp sensors.
 
-![Image of board](image.png)
+![Image of board](board.png)
 
 # Features
  * USB-C with PD controller to request more power from chargers and battery packs.
