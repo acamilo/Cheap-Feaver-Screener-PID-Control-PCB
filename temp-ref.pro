@@ -1,4 +1,4 @@
-update=4/25/2020 9:42:11 PM
+update=4/26/2020 2:43:38 AM
 version=1
 last_client=pcbnew
 [general]
@@ -16,7 +16,7 @@ LibDir=
 version=1
 PageLayoutDescrFile=
 LastNetListRead=temp-ref.net
-CopperLayerCount=4
+CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -29,6 +29,11 @@ MinMicroViaDiameter=0.05
 MinMicroViaDrill=0.05
 MinHoleToHole=0.1524
 TrackWidth1=0.1524
+TrackWidth2=0.1524
+TrackWidth3=0.25
+TrackWidth4=0.5
+TrackWidth5=0.75
+TrackWidth6=1
 ViaDiameter1=0.508
 ViaDrill1=0.254
 dPairWidth1=0.2
@@ -65,11 +70,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
