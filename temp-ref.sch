@@ -172,7 +172,7 @@ U 1 1 5EA5EF76
 P 6450 4500
 F 0 "J2" H 6557 5367 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 6557 5276 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_JAE_DX07S024WJ3R400" H 6600 4500 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 6600 4500 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 6600 4500 50  0001 C CNN
 	1    6450 4500
 	1    0    0    -1  
@@ -779,7 +779,7 @@ U 1 1 5EA33250
 P 7150 2250
 F 0 "SW1" H 7150 2485 50  0000 C CNN
 F 1 "SW_SPST" H 7150 2394 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC7xxJ" H 7150 2250 50  0001 C CNN
+F 2 "temp-ref:5.2mm_Tact_reverse_mount" H 7150 2250 50  0001 C CNN
 F 3 "~" H 7150 2250 50  0001 C CNN
 	1    7150 2250
 	1    0    0    -1  
@@ -792,7 +792,7 @@ U 1 1 5EA38D70
 P 7150 2700
 F 0 "SW2" H 7150 2935 50  0000 C CNN
 F 1 "SW_SPST" H 7150 2844 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC7xxJ" H 7150 2700 50  0001 C CNN
+F 2 "temp-ref:5.2mm_Tact_reverse_mount" H 7150 2700 50  0001 C CNN
 F 3 "~" H 7150 2700 50  0001 C CNN
 	1    7150 2700
 	1    0    0    -1  
@@ -803,7 +803,7 @@ U 1 1 5EA39267
 P 7150 3100
 F 0 "SW3" H 7150 3335 50  0000 C CNN
 F 1 "SW_SPST" H 7150 3244 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC7xxJ" H 7150 3100 50  0001 C CNN
+F 2 "temp-ref:5.2mm_Tact_reverse_mount" H 7150 3100 50  0001 C CNN
 F 3 "~" H 7150 3100 50  0001 C CNN
 	1    7150 3100
 	1    0    0    -1  
@@ -877,7 +877,7 @@ U 1 1 5EA71D64
 P 7150 3350
 F 0 "SW4" H 7150 3585 50  0000 C CNN
 F 1 "SW_SPST" H 7150 3494 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC7xxJ" H 7150 3350 50  0001 C CNN
+F 2 "temp-ref:5.2mm_Tact_reverse_mount" H 7150 3350 50  0001 C CNN
 F 3 "~" H 7150 3350 50  0001 C CNN
 	1    7150 3350
 	1    0    0    -1  
@@ -1242,13 +1242,13 @@ Text GLabel 1500 1900 0    50   Input ~ 0
 HEATER0
 Text GLabel 1500 2000 0    50   Input ~ 0
 HEATER1
-Text GLabel 1500 3000 0    50   Input ~ 0
+Text GLabel 1500 2500 0    50   Input ~ 0
 WIFI_G0
-Text GLabel 1500 3100 0    50   Input ~ 0
+Text GLabel 1500 1800 0    50   Input ~ 0
 WIFI_G2
 Text GLabel 1500 2300 0    50   Input ~ 0
 WIFI_TX
-Text GLabel 1500 2900 0    50   Input ~ 0
+Text GLabel 1500 1700 0    50   Input ~ 0
 WIFI_RST
 Text GLabel 6800 2250 0    50   Input ~ 0
 KEYA
@@ -1342,61 +1342,37 @@ VBUS_SENSE
 $Comp
 L power:+3V3 #PWR0149
 U 1 1 5EB7C07B
-P 4650 4500
-F 0 "#PWR0149" H 4650 4350 50  0001 C CNN
-F 1 "+3V3" H 4665 4673 50  0000 C CNN
-F 2 "" H 4650 4500 50  0001 C CNN
-F 3 "" H 4650 4500 50  0001 C CNN
-	1    4650 4500
+P 4850 5950
+F 0 "#PWR0149" H 4850 5800 50  0001 C CNN
+F 1 "+3V3" H 4865 6123 50  0000 C CNN
+F 2 "" H 4850 5950 50  0001 C CNN
+F 3 "" H 4850 5950 50  0001 C CNN
+	1    4850 5950
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4800 4500 4650 4500
 $Comp
 L power:GND #PWR0150
 U 1 1 5EB87206
-P 4700 4700
-F 0 "#PWR0150" H 4700 4450 50  0001 C CNN
-F 1 "GND" H 4705 4527 50  0000 C CNN
-F 2 "" H 4700 4700 50  0001 C CNN
-F 3 "" H 4700 4700 50  0001 C CNN
-	1    4700 4700
+P 4800 6850
+F 0 "#PWR0150" H 4800 6600 50  0001 C CNN
+F 1 "GND" H 4805 6677 50  0000 C CNN
+F 2 "" H 4800 6850 50  0001 C CNN
+F 3 "" H 4800 6850 50  0001 C CNN
+	1    4800 6850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4800 4700 4700 4700
-Text GLabel 4450 4800 0    50   Input ~ 0
+Text GLabel 4850 6450 0    50   Input ~ 0
 DISP_SCK
-Text GLabel 4450 4900 0    50   Input ~ 0
-DISP_MISO
-Text GLabel 4450 5000 0    50   Input ~ 0
+Text GLabel 4850 6350 0    50   Input ~ 0
 DISP_MOSI
-Text GLabel 4450 5100 0    50   Input ~ 0
+Text GLabel 4850 6550 0    50   Input ~ 0
 DISP_CS
-Text GLabel 4450 5200 0    50   Input ~ 0
+Text GLabel 4850 6150 0    50   Input ~ 0
 DISP_RST
-Text GLabel 4450 5300 0    50   Input ~ 0
+Text GLabel 4850 6250 0    50   Input ~ 0
 DISP_DC
-Text GLabel 4450 5400 0    50   Input ~ 0
-DISP_SDCS
-Text GLabel 4450 5500 0    50   Input ~ 0
+Text GLabel 3000 6350 0    50   Input ~ 0
 DISP_BACKLIGHT
-Wire Wire Line
-	4800 4800 4450 4800
-Wire Wire Line
-	4800 4900 4450 4900
-Wire Wire Line
-	4800 5000 4450 5000
-Wire Wire Line
-	4800 5100 4450 5100
-Wire Wire Line
-	4800 5200 4450 5200
-Wire Wire Line
-	4800 5300 4450 5300
-Wire Wire Line
-	4800 5400 4450 5400
-Wire Wire Line
-	4800 5500 4450 5500
 Text GLabel 1500 2400 0    50   Input ~ 0
 WIFI_RX
 Wire Wire Line
@@ -1471,8 +1447,6 @@ F 3 "" H 6900 1000 50  0001 C CNN
 $EndComp
 Text GLabel 3650 1700 2    50   Input ~ 0
 DISP_SCK
-Text GLabel 1500 2500 0    50   Input ~ 0
-DISP_MISO
 Text GLabel 3650 1800 2    50   Input ~ 0
 DISP_MOSI
 Text GLabel 1500 3400 0    50   Input ~ 0
@@ -1481,8 +1455,6 @@ Text GLabel 1500 3900 0    50   Input ~ 0
 DISP_RST
 Text GLabel 1500 4000 0    50   Input ~ 0
 DISP_DC
-Text GLabel 1500 1800 0    50   Input ~ 0
-DISP_SDCS
 Text GLabel 1500 2800 0    50   Input ~ 0
 DISP_BACKLIGHT
 Text Notes 6300 8650 0    50   ~ 0
@@ -1574,17 +1546,6 @@ Wire Wire Line
 Wire Wire Line
 	9900 9300 9850 9300
 $Comp
-L adafruit-tft-120x135-4383:adafruit-tft-120x135-4383 U6
-U 1 1 5F0AA818
-P 4950 5800
-F 0 "U6" H 5228 6671 50  0000 L CNN
-F 1 "adafruit-tft-120x135-4383" H 5228 6580 50  0000 L CNN
-F 2 "temp-ref:adafruit-tft-4383" H 4950 5800 50  0001 C CNN
-F 3 "" H 4950 5800 50  0001 C CNN
-	1    4950 5800
-	1    0    0    -1  
-$EndComp
-$Comp
 L STS-30-DIS:STS-30-DIS U5
 U 1 1 5F0AB74B
 P 3200 9400
@@ -1674,4 +1635,144 @@ F 3 "" H 9800 8900 50  0001 C CNN
 	1    9800 8900
 	0    -1   1    0   
 $EndComp
+$Comp
+L spi-tft-1.14:spi-tft-1.14-240x135 U6
+U 1 1 5EAE6EF2
+P 5150 6750
+F 0 "U6" H 5378 7146 50  0000 L CNN
+F 1 "spi-tft-1.14-240x135" H 5378 7055 50  0000 L CNN
+F 2 "temp-ref:TFT-1.14-240-135" H 5250 6250 50  0001 C CNN
+F 3 "" H 5250 6250 50  0001 C CNN
+	1    5150 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q2
+U 1 1 5EA5FD70
+P 3850 6350
+F 0 "Q2" H 4041 6396 50  0000 L CNN
+F 1 "MMBT3904" H 3500 6500 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4050 6275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3850 6350 50  0001 L CNN
+	1    3850 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5EA60C2A
+P 3400 6350
+F 0 "R5" V 3350 6200 50  0000 C CNN
+F 1 "10k" V 3400 6350 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3400 6350 50  0001 C CNN
+F 3 "~" H 3400 6350 50  0001 C CNN
+	1    3400 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5EA615A5
+P 3200 6150
+F 0 "R3" V 3150 6000 50  0000 C CNN
+F 1 "10k" V 3200 6150 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3200 6150 50  0001 C CNN
+F 3 "~" H 3200 6150 50  0001 C CNN
+	1    3200 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0152
+U 1 1 5EA61EE0
+P 3200 5950
+F 0 "#PWR0152" H 3200 5800 50  0001 C CNN
+F 1 "+3V3" H 3215 6123 50  0000 C CNN
+F 2 "" H 3200 5950 50  0001 C CNN
+F 3 "" H 3200 5950 50  0001 C CNN
+	1    3200 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5EA71536
+P 4350 6050
+F 0 "R9" V 4300 5900 50  0000 C CNN
+F 1 "33" V 4350 6050 39  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 6050 50  0001 C CNN
+F 3 "~" H 4350 6050 50  0001 C CNN
+	1    4350 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 6050 4450 6050
+Wire Wire Line
+	4250 6050 3950 6050
+Wire Wire Line
+	3950 6050 3950 6150
+Wire Wire Line
+	4850 5950 4950 5950
+$Comp
+L power:GND #PWR0153
+U 1 1 5EA9D001
+P 3950 6600
+F 0 "#PWR0153" H 3950 6350 50  0001 C CNN
+F 1 "GND" H 3955 6427 50  0000 C CNN
+F 2 "" H 3950 6600 50  0001 C CNN
+F 3 "" H 3950 6600 50  0001 C CNN
+	1    3950 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6550 3950 6600
+Wire Wire Line
+	3650 6350 3500 6350
+Wire Wire Line
+	3300 6350 3200 6350
+Wire Wire Line
+	3200 6250 3200 6350
+Connection ~ 3200 6350
+Wire Wire Line
+	3200 6350 3000 6350
+Wire Wire Line
+	3200 5950 3200 6050
+$Comp
+L power:+3V3 #PWR0154
+U 1 1 5EAE9DAC
+P 4550 6650
+F 0 "#PWR0154" H 4550 6500 50  0001 C CNN
+F 1 "+3V3" H 4565 6823 50  0000 C CNN
+F 2 "" H 4550 6650 50  0001 C CNN
+F 3 "" H 4550 6650 50  0001 C CNN
+	1    4550 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 6650 4950 6650
+Wire Wire Line
+	4950 6750 4900 6750
+Wire Wire Line
+	4900 6750 4900 6850
+Wire Wire Line
+	4900 6850 4950 6850
+Wire Wire Line
+	4800 6850 4900 6850
+Connection ~ 4900 6850
+Wire Wire Line
+	4850 6150 4950 6150
+Wire Wire Line
+	4950 6250 4850 6250
+Wire Wire Line
+	4950 6350 4850 6350
+Wire Wire Line
+	4950 6450 4850 6450
+Wire Wire Line
+	4950 6550 4850 6550
+Wire Wire Line
+	1500 2300 1600 2300
+Wire Wire Line
+	1500 2400 1600 2400
+Wire Wire Line
+	1500 2500 1600 2500
+Wire Wire Line
+	1600 1800 1500 1800
+Wire Wire Line
+	1500 1700 1600 1700
 $EndSCHEMATC
