@@ -1,4 +1,4 @@
-(module ESP-01 (layer F.Cu) (tedit 577EF889)
+(module ESP-01 (layer F.Cu) (tedit 5EA60EA2)
   (descr "Module, ESP-8266, ESP-01, 8 pin")
   (tags "Module ESP-8266 ESP8266")
   (fp_text reference REF** (at 0.254 -4.572) (layer F.SilkS)
@@ -33,4 +33,9 @@
   (pad 6 thru_hole oval (at 2.54 5.08) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad 7 thru_hole oval (at 0 7.62) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
   (pad 8 thru_hole oval (at 2.54 7.62) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
+  (model ${KIPRJMOD}/temp-ref.pretty/ESP8266-ESP01.stp
+    (offset (xyz -1.85 -11 2.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
