@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 29)
+    (drawings 28)
     (tracks 750)
     (zones 0)
     (modules 38)
@@ -15,7 +15,7 @@
   )
 
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (31 B.Cu signal hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
@@ -24,7 +24,7 @@
     (38 B.Mask user hide)
     (39 F.Mask user)
     (40 Dwgs.User user)
-    (44 Edge.Cuts user)
+    (44 Edge.Cuts user hide)
     (45 Margin user hide)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
@@ -73,7 +73,7 @@
     (grid_origin -82.296 -69.8627)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x310fc_80000001)
+      (layerselection 0x310fc_ffffffff)
       (usegerberextensions true)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -1760,7 +1760,6 @@
   (gr_line (start -71.12 -36.8427) (end -75.692 -36.8427) (layer Edge.Cuts) (width 0.1524) (tstamp 5EEB4261))
   (gr_line (start -71.12 -3.048) (end -71.12 -36.8427) (layer Edge.Cuts) (width 0.1524))
   (gr_line (start -73.152 -3.048) (end -71.12 -3.048) (layer Edge.Cuts) (width 0.1524))
-  (gr_line (start -73.152 -76.2) (end -73.152 0) (layer F.SilkS) (width 0.1524))
   (gr_text "Temp Reference Design 2 Rev 2" (at 8.89 -32.3723 90) (layer F.Cu)
     (effects (font (size 2 2) (thickness 0.1524)))
   )
@@ -2535,7 +2534,7 @@
   (segment (start -79.459275 -24.404775) (end -79.459275 -22.140311) (width 0.1524) (layer B.Cu) (net 50))
   (segment (start -81.3308 -26.2763) (end -79.459275 -24.404775) (width 0.1524) (layer B.Cu) (net 50))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5EEB5352) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5EEB56F1) (hatch edge 0.508)
     (connect_pads (clearance 0.1524))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -2561,7 +2560,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5EEB534F) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5EEB56EE) (hatch edge 0.508)
     (connect_pads (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.1524) (thermal_bridge_width 0.5))
@@ -3532,7 +3531,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5EEB534C) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5EEB56EB) (hatch edge 0.508)
     (connect_pads (clearance 0.1524))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
