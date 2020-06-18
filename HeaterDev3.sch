@@ -131,51 +131,10 @@ $EndComp
 Connection ~ 5000 3000
 Wire Wire Line
 	5050 3000 5000 3000
-$Comp
-L LED:APA102 D1
-U 1 1 5EA7B5CC
-P 2000 3600
-F 0 "D1" H 2150 3850 50  0000 C CNN
-F 1 "APA102" H 2150 3350 50  0000 C CNN
-F 2 "LED_SMD:LED_RGB_PLCC-6" H 2050 3300 50  0001 L TNN
-F 3 "http://www.led-color.com/upload/201506/APA102%20LED.pdf" H 2100 3225 50  0001 L TNN
-	1    2000 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3000 3300 2800 3300
 Wire Wire Line
 	2800 3300 2800 2850
-Wire Wire Line
-	3000 3500 2300 3500
-Wire Wire Line
-	3000 3600 2300 3600
-$Comp
-L power:+3V3 #PWR0105
-U 1 1 5EA810E9
-P 2000 3200
-F 0 "#PWR0105" H 2000 3050 50  0001 C CNN
-F 1 "+3V3" H 2050 3300 50  0000 L CNN
-F 2 "" H 2000 3200 50  0001 C CNN
-F 3 "" H 2000 3200 50  0001 C CNN
-	1    2000 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 3200 2000 3300
-$Comp
-L power:GND #PWR0106
-U 1 1 5EA82082
-P 2000 3950
-F 0 "#PWR0106" H 2000 3700 50  0001 C CNN
-F 1 "GND" H 2005 3777 50  0000 C CNN
-F 2 "" H 2000 3950 50  0001 C CNN
-F 3 "" H 2000 3950 50  0001 C CNN
-	1    2000 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 3900 2000 3950
 $Comp
 L Device:LED D2
 U 1 1 5EA82FB1
@@ -435,9 +394,9 @@ Connection ~ 3450 -1700
 Wire Wire Line
 	3450 -1600 3550 -1600
 Connection ~ 3450 -1600
-Text GLabel 3550 -1700 2    50   Input ~ 0
-D+
 Text GLabel 3550 -1600 2    50   Input ~ 0
+D+
+Text GLabel 3550 -1700 2    50   Input ~ 0
 D-
 $Comp
 L power:+3V3 #PWR0111
@@ -792,7 +751,7 @@ F 3 "~" H 7650 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 1200 5800 1250
-Text GLabel 2900 3700 0    50   Input ~ 0
+Text GLabel 4500 4300 2    50   Input ~ 0
 HEATER
 $Comp
 L Device:C_Small C7
@@ -975,4 +934,103 @@ Text GLabel 900  3900 3    50   Input ~ 0
 SDA_PD
 Text Label 8600 4850 0    50   ~ 0
 COIL
+Text GLabel 3800 -2000 0    50   Input ~ 0
+CC2
+Text GLabel 3800 -2100 0    50   Input ~ 0
+CC1
+$Comp
+L Device:R_Small R5
+U 1 1 5EEB0FDB
+P 4000 -2100
+F 0 "R5" V 3900 -2100 50  0000 C CNN
+F 1 "5.1k" V 4000 -2100 31  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4000 -2100 50  0001 C CNN
+F 3 "~" H 4000 -2100 50  0001 C CNN
+	1    4000 -2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5EEB1A64
+P 4000 -2000
+F 0 "R6" V 4100 -2000 50  0000 C CNN
+F 1 "5.1k" V 4000 -2000 31  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4000 -2000 50  0001 C CNN
+F 3 "~" H 4000 -2000 50  0001 C CNN
+	1    4000 -2000
+	0    1    1    0   
+$EndComp
+Text Notes 4150 -1900 0    50   ~ 0
+CC Resistors in case you just want to omit the PD chip.
+$Comp
+L power:GND #PWR0138
+U 1 1 5EEB3038
+P 4200 -2100
+F 0 "#PWR0138" H 4200 -2350 50  0001 C CNN
+F 1 "GND" H 4205 -2273 50  0000 C CNN
+F 2 "" H 4200 -2100 50  0001 C CNN
+F 3 "" H 4200 -2100 50  0001 C CNN
+	1    4200 -2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 -2100 4150 -2100
+Wire Wire Line
+	4100 -2000 4150 -2000
+Wire Wire Line
+	4150 -2000 4150 -2100
+Connection ~ 4150 -2100
+Wire Wire Line
+	4150 -2100 4100 -2100
+Wire Wire Line
+	3900 -2100 3800 -2100
+Wire Wire Line
+	3900 -2000 3800 -2000
+$Comp
+L LED:SK6812MINI D1
+U 1 1 5EEF51C5
+P 1450 5400
+F 0 "D1" H 1794 5446 50  0000 L CNN
+F 1 "SK6812MINI" H 1794 5355 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 1500 5100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 1550 5025 50  0001 L TNN
+	1    1450 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2900 4100 0    50   Input ~ 0
+NEOPIX_DAT
+Wire Wire Line
+	3000 4100 2900 4100
+Wire Wire Line
+	4500 4300 4400 4300
+Text GLabel 1050 5400 0    50   Input ~ 0
+NEOPIX_DAT
+Wire Wire Line
+	1150 5400 1050 5400
+$Comp
+L power:GND #PWR0105
+U 1 1 5EF01523
+P 1450 5750
+F 0 "#PWR0105" H 1450 5500 50  0001 C CNN
+F 1 "GND" V 1455 5622 50  0000 R CNN
+F 2 "" H 1450 5750 50  0001 C CNN
+F 3 "" H 1450 5750 50  0001 C CNN
+	1    1450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 5EF01E84
+P 1450 4900
+F 0 "#PWR0106" H 1450 4750 50  0001 C CNN
+F 1 "+3V3" V 1350 4650 50  0000 L CNN
+F 2 "" H 1450 4900 50  0001 C CNN
+F 3 "" H 1450 4900 50  0001 C CNN
+	1    1450 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4900 1450 5100
+Wire Wire Line
+	1450 5700 1450 5750
 $EndSCHEMATC
