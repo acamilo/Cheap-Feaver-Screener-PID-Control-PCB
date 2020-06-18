@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name temp-ref)(type KiCad)(uri ${KIPRJMOD}/temp-ref.pretty)(options "")(descr ""))
+  (lib (name HeaterDev3)(type KiCad)(uri ${KIPRJMOD}/HeaterDev3.pretty)(options "")(descr ""))
+  (lib (name HeaterDev-2layer-integrated)(type KiCad)(uri C:/Users/AlexCamilo/Documents/GitHub/HeaterDev-2layer-integrated)(options "")(descr ""))
 )
