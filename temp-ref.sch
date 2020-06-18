@@ -1921,4 +1921,6 @@ Text GLabel 11900 9800 0    50   Input ~ 0
 DALLAS1
 Text GLabel 13050 8950 2    50   Input ~ 0
 DALLAS2
+Wire Wire Line
+	8000 6150 8000 6250
 $EndSCHEMATC
