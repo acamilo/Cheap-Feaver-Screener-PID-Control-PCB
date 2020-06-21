@@ -267,17 +267,6 @@ Wire Wire Line
 	10600 -1350 10350 -1350
 Connection ~ 10350 -1350
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 5EAB43F1
-P 2750 -1700
-F 0 "J1" H 2857 -833 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 2857 -924 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 2900 -1700 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2900 -1700 50  0001 C CNN
-	1    2750 -1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C4
 U 1 1 5EAB9E79
 P 5800 1250
@@ -376,28 +365,6 @@ Text GLabel 2950 4400 0    50   Input ~ 0
 SCL
 Text GLabel 2950 4300 0    50   Input ~ 0
 SDA
-Wire Wire Line
-	3350 -1800 3450 -1800
-Wire Wire Line
-	3450 -1800 3450 -1700
-Wire Wire Line
-	3450 -1700 3350 -1700
-Wire Wire Line
-	3450 -1600 3450 -1500
-Wire Wire Line
-	3350 -1500 3450 -1500
-Wire Wire Line
-	3350 -1600 3450 -1600
-Wire Wire Line
-	3450 -1700 3550 -1700
-Connection ~ 3450 -1700
-Wire Wire Line
-	3450 -1600 3550 -1600
-Connection ~ 3450 -1600
-Text GLabel 3550 -1600 2    50   Input ~ 0
-D+
-Text GLabel 3550 -1700 2    50   Input ~ 0
-D-
 $Comp
 L power:+3V3 #PWR0111
 U 1 1 5EC26776
@@ -425,9 +392,9 @@ F 3 "" H 10650 -1850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10650 -1950 10650 -1850
-Text GLabel 3350 -2100 2    50   Input ~ 0
+Text GLabel 2200 -3700 0    50   Input ~ 0
 CC1
-Text GLabel 3350 -2000 2    50   Input ~ 0
+Text GLabel 3800 -3700 2    50   Input ~ 0
 CC2
 Text GLabel 2350 1250 2    50   Input ~ 0
 CC1
@@ -473,32 +440,6 @@ Wire Wire Line
 	4600 5000 4600 5050
 Wire Wire Line
 	2900 3700 3000 3700
-$Comp
-L power:GND #PWR0124
-U 1 1 5EECBAEE
-P 2750 -650
-F 0 "#PWR0124" H 2750 -900 50  0001 C CNN
-F 1 "GND" H 2755 -823 50  0000 C CNN
-F 2 "" H 2750 -650 50  0001 C CNN
-F 3 "" H 2750 -650 50  0001 C CNN
-	1    2750 -650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0125
-U 1 1 5EECC53B
-P 2450 -650
-F 0 "#PWR0125" H 2450 -900 50  0001 C CNN
-F 1 "GND" H 2455 -823 50  0000 C CNN
-F 2 "" H 2450 -650 50  0001 C CNN
-F 3 "" H 2450 -650 50  0001 C CNN
-	1    2450 -650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 -800 2750 -650
-Wire Wire Line
-	2450 -800 2450 -650
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5EAA2C79
@@ -589,16 +530,14 @@ Wire Wire Line
 $Comp
 L power:VBUS #PWR0112
 U 1 1 5ECB229D
-P 3850 -2300
-F 0 "#PWR0112" H 3850 -2450 50  0001 C CNN
-F 1 "VBUS" V 3865 -2173 50  0000 L CNN
-F 2 "" H 3850 -2300 50  0001 C CNN
-F 3 "" H 3850 -2300 50  0001 C CNN
-	1    3850 -2300
+P 3800 -3900
+F 0 "#PWR0112" H 3800 -4050 50  0001 C CNN
+F 1 "VBUS" V 3815 -3773 50  0000 L CNN
+F 2 "" H 3800 -3900 50  0001 C CNN
+F 3 "" H 3800 -3900 50  0001 C CNN
+	1    3800 -3900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3350 -2300 3850 -2300
 $Comp
 L Interface_USB:FUSB302BMPX U2
 U 1 1 5ECB4FDE
@@ -923,58 +862,58 @@ Text GLabel 900  3900 3    50   Input ~ 0
 SDA_PD
 Text Label 8600 4850 0    50   ~ 0
 COIL
-Text GLabel 3800 -2000 0    50   Input ~ 0
+Text GLabel 4900 -3700 0    50   Input ~ 0
 CC2
-Text GLabel 3800 -2100 0    50   Input ~ 0
+Text GLabel 4900 -3800 0    50   Input ~ 0
 CC1
 $Comp
 L Device:R_Small R5
 U 1 1 5EEB0FDB
-P 4000 -2100
-F 0 "R5" V 3900 -2100 50  0000 C CNN
-F 1 "5.1k" V 4000 -2100 31  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4000 -2100 50  0001 C CNN
-F 3 "~" H 4000 -2100 50  0001 C CNN
-	1    4000 -2100
+P 5100 -3800
+F 0 "R5" V 5000 -3800 50  0000 C CNN
+F 1 "5.1k" V 5100 -3800 31  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 -3800 50  0001 C CNN
+F 3 "~" H 5100 -3800 50  0001 C CNN
+	1    5100 -3800
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R6
 U 1 1 5EEB1A64
-P 4000 -2000
-F 0 "R6" V 4100 -2000 50  0000 C CNN
-F 1 "5.1k" V 4000 -2000 31  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4000 -2000 50  0001 C CNN
-F 3 "~" H 4000 -2000 50  0001 C CNN
-	1    4000 -2000
+P 5100 -3700
+F 0 "R6" V 5200 -3700 50  0000 C CNN
+F 1 "5.1k" V 5100 -3700 31  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 -3700 50  0001 C CNN
+F 3 "~" H 5100 -3700 50  0001 C CNN
+	1    5100 -3700
 	0    1    1    0   
 $EndComp
-Text Notes 4150 -1900 0    50   ~ 0
+Text Notes 5250 -3600 0    50   ~ 0
 CC Resistors in case you just want to omit the PD chip.
 $Comp
 L power:GND #PWR0138
 U 1 1 5EEB3038
-P 4200 -2100
-F 0 "#PWR0138" H 4200 -2350 50  0001 C CNN
-F 1 "GND" H 4205 -2273 50  0000 C CNN
-F 2 "" H 4200 -2100 50  0001 C CNN
-F 3 "" H 4200 -2100 50  0001 C CNN
-	1    4200 -2100
+P 5300 -3800
+F 0 "#PWR0138" H 5300 -4050 50  0001 C CNN
+F 1 "GND" H 5305 -3973 50  0000 C CNN
+F 2 "" H 5300 -3800 50  0001 C CNN
+F 3 "" H 5300 -3800 50  0001 C CNN
+	1    5300 -3800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4200 -2100 4150 -2100
+	5300 -3800 5250 -3800
 Wire Wire Line
-	4100 -2000 4150 -2000
+	5200 -3700 5250 -3700
 Wire Wire Line
-	4150 -2000 4150 -2100
-Connection ~ 4150 -2100
+	5250 -3700 5250 -3800
+Connection ~ 5250 -3800
 Wire Wire Line
-	4150 -2100 4100 -2100
+	5250 -3800 5200 -3800
 Wire Wire Line
-	3900 -2100 3800 -2100
+	5000 -3800 4900 -3800
 Wire Wire Line
-	3900 -2000 3800 -2000
+	5000 -3700 4900 -3700
 $Comp
 L LED:SK6812MINI D1
 U 1 1 5EEF51C5
@@ -1301,4 +1240,55 @@ Wire Wire Line
 Connection ~ 7150 10200
 Wire Wire Line
 	7150 10200 7100 10200
+$Comp
+L USB4110-GF-A:USB4110-GF-A J1
+U 1 1 5EF03D48
+P 3000 -3600
+F 0 "J1" H 3000 -3033 50  0000 C CNN
+F 1 "USB4110-GF-A" H 3000 -3124 50  0000 C CNN
+F 2 "HeaterDev3:GCT_USB4110-GF-A" H 3000 -3600 50  0001 L BNN
+F 3 "" H 3000 -3600 50  0001 L BNN
+F 4 "A" H 3000 -3600 50  0001 L BNN "Field4"
+F 5 "GCT" H 3000 -3600 50  0001 L BNN "Field5"
+F 6 "Manufacturer Recommendations" H 3000 -3600 50  0001 L BNN "Field6"
+	1    3000 -3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 -3600 0    50   Input ~ 0
+D+
+Text GLabel 3800 -3600 2    50   Input ~ 0
+D-
+Wire Wire Line
+	3700 -3700 3800 -3700
+Wire Wire Line
+	2200 -3700 2300 -3700
+Wire Wire Line
+	2300 -3600 2250 -3600
+Wire Wire Line
+	3800 -3600 3750 -3600
+Wire Wire Line
+	2250 -3600 2250 -3500
+Wire Wire Line
+	2250 -3500 2300 -3500
+Connection ~ 2250 -3600
+Wire Wire Line
+	2250 -3600 2200 -3600
+Wire Wire Line
+	3700 -3500 3750 -3500
+Wire Wire Line
+	3750 -3500 3750 -3600
+Connection ~ 3750 -3600
+Wire Wire Line
+	3750 -3600 3700 -3600
+$Comp
+L power:GND #PWR0124
+U 1 1 5EF357BE
+P 3800 -3200
+F 0 "#PWR0124" H 3800 -3450 50  0001 C CNN
+F 1 "GND" H 3805 -3373 50  0000 C CNN
+F 2 "" H 3800 -3200 50  0001 C CNN
+F 3 "" H 3800 -3200 50  0001 C CNN
+	1    3800 -3200
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

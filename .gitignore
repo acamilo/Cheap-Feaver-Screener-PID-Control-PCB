@@ -27,3 +27,19 @@ fp-info-cache
 
 bom/
 DXFs/
+gerbers.zip
+gerbers/HeaterDev3-B_Cu.gbl
+gerbers/HeaterDev3-B_Fab.gbr
+gerbers/HeaterDev3-B_Mask.gbs
+gerbers/HeaterDev3-B_Paste.gbp
+gerbers/HeaterDev3-B_SilkS.gbo
+gerbers/HeaterDev3-Edge_Cuts.gm1
+gerbers/HeaterDev3-F_Cu.gtl
+gerbers/HeaterDev3-F_Fab.gbr
+gerbers/HeaterDev3-F_Mask.gts
+gerbers/HeaterDev3-F_Paste.gtp
+gerbers/HeaterDev3-F_SilkS.gto
+gerbers/HeaterDev3-NPTH-drl_map.dxf
+gerbers/HeaterDev3-NPTH.drl
+gerbers/HeaterDev3-PTH-drl_map.dxf
+gerbers/HeaterDev3-PTH.drl

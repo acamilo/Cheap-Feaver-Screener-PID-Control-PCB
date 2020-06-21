@@ -5,4 +5,5 @@
   (lib (name PTN5110)(type Legacy)(uri ${KIPRJMOD}/HeaterDev3-libs/PTN5110.lib)(options "")(descr ""))
   (lib (name STL6P3LLH6)(type Legacy)(uri ${KIPRJMOD}/HeaterDev3-libs/STL6P3LLH6.lib)(options "")(descr ""))
   (lib (name STS-30-DIS)(type Legacy)(uri ${KIPRJMOD}/HeaterDev3-libs/STS-30-DIS.lib)(options "")(descr ""))
+  (lib (name USB4110-GF-A)(type Legacy)(uri ${KIPRJMOD}/HeaterDev3-libs/USB4110-GF-A.lib)(options "")(descr ""))
 )
