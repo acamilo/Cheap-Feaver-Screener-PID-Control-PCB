@@ -1291,4 +1291,8 @@ F 3 "" H 3800 -3200 50  0001 C CNN
 	1    3800 -3200
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	3800 -3900 3700 -3900
+Wire Wire Line
+	3800 -3200 3700 -3200
 $EndSCHEMATC
