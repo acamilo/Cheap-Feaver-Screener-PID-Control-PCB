@@ -1,11 +1,11 @@
 # Cheap-Feaver-Screener-PID-Control-PCB
 PCB to control two heating elements wit i2c temp sensors.
 
-Demnstration of version 1 that used a Ceramic Resistor
+Demo Video of version 1 that used a Ceramic Resistor
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IRxbQEMiYrg/0.jpg)](https://youtu.be/IRxbQEMiYrg?t=2844)
 
-Demo of version 2 that used a PC trace.
+Demo Video of version 2 that used a PC trace.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/efQGo4ABkNo/0.jpg)](https://youtu.be/efQGo4ABkNo?t=1757)
 
