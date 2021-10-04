@@ -1,6 +1,10 @@
 # Cheap-Feaver-Screener-PID-Control-PCB
 PCB to control two heating elements wit i2c temp sensors.
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IRxbQEMiYrg/0.jpg)](https://youtu.be/IRxbQEMiYrg?t=2844)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/efQGo4ABkNo/0.jpg)](https://youtu.be/efQGo4ABkNo?t=1757)
+
+
 ![Image of board](board.png)
 
 # Features
