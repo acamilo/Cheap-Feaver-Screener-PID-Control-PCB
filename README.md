@@ -3,7 +3,7 @@ PCB to control two heating elements wit i2c temp sensors.
 
 Demo Video of version 1 that used a Ceramic Resistor
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IRxbQEMiYrg/0.jpg)](https://youtu.be/IRxbQEMiYrg?t=2844)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/efQGo4ABkNo/0.jpg)](https://youtu.be/IRxbQEMiYrg?t=2844)
 
 Demo Video of version 2 that used a PC trace.
 
